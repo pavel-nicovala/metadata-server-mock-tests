@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "properties": {
+    "sequenceNumber": {
+      "type": "integer"
+    },
+    "value": {
+      "type": "string"
+    },
+    "signatures": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "signature": {
+              "type": "string"
+            },
+            "publicKey": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "signature",
+            "publicKey"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "sequenceNumber",
+    "value",
+    "signatures"
+  ]
+}
