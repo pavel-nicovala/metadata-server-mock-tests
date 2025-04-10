@@ -1,6 +1,6 @@
 # Playwright E2E Testing Framework
 
-This project contains end-to-end tests using Playwright and Cucumber for Behavior-Driven Development (BDD), as well as API tests in Jest and Axios for validating API responses. 
+This project contains end-to-end tests using Playwright, as well as API tests in Jest and Supertest for validating API responses. 
 
 ## ⚠️ Known Bugs
 
@@ -10,9 +10,9 @@ This project contains end-to-end tests using Playwright and Cucumber for Behavio
 - **Response code**: Status code is 200 instead of 201
 - **Static response**: It returns existing data from [this repository](https://github.com/paluchs-iohk/metadata-server-mock), as long as payload follows the defined schema and must include a valid `subjectId` (e.g `2048c7e09308f9138cef8f1a81733b72e601d016eea5eef759ff2933416d617a696e67436f696e` or `919e8a1922aaa764b1d66407c6f62244e77081215f385b60a62091494861707079436f696e`)
 
-2. Performace Issues:
+2. Performance Issues:
 
-- **Application fails to resepond**: Running the tests e2e sometimes fail as the app is flaky and fails to respond 
+- **Application fails to respond**: Running the tests sometimes fails as the app is flaky and fails to respond 
 
 ## 🚀 Getting Started
 
@@ -37,13 +37,11 @@ This project contains end-to-end tests using Playwright and Cucumber for Behavio
 
 ## 🔧 Environment Configuration
 
-The tests can be configured using environment variables. Configuration is managed through a type-safe system that provides intelligent defaults and validation.
+The tests can be configured using environment config.
 
 ### Configuration Methods
 
 1. Create a `.env` file based on `.env.example`
-2. Set environment variables directly in your shell
-3. Pass them via command line
 
 
 ## 🧪 Running E2E Tests
@@ -65,7 +63,7 @@ npm run e2e:report
 
 ### Run tests with UI mode
 ```bash
-npm run  e2e:ui
+npm run e2e:ui
 ```
 
 ### Run tests on debug mode
@@ -75,7 +73,6 @@ npm run e2e:debug
 ## 📊 E2E Test Reports
 
 - Playwright HTML reports can be viewed using `npm run e2e:report`
-- Screenshots are captured on test failures
 
 ## 🧪 Running API Tests
 
