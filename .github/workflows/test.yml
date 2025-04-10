@@ -48,7 +48,7 @@ jobs:
           touch .env
 
       - name: Run API tests
-        run: npm run test:api
+        run: npm run api
 
   e2e-tests:
     name: E2E Tests
@@ -75,7 +75,7 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run E2E tests
-        run: npm run test:e2e
+        run: npm run e2e
 
   notify:
     name: Create Issue on Failure
