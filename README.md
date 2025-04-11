@@ -81,7 +81,7 @@ This project includes a GitHub Actions workflow for automated testing. The workf
 
 - **Setup Job**: Installs dependencies and prepares the environment
 - **API Tests Job**: Runs API tests in parallel with E2E tests
-- **E2E Tests Job**: Runs end-to-end tests in parallel with API tests
+- **E2E Tests Job**: Runs E2E tests in parallel with API tests
 - **Notification Job**: Creates GitHub issues on test failures
 
 ### Trigger Events
