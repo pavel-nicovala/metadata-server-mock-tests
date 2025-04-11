@@ -1,4 +1,4 @@
-# Playwright E2E Testing Framework
+# Metdata Server Mock Tests
 
 This project contains end-to-end tests using Playwright, as well as API tests in Jest and Supertest for validating API responses. 
 
