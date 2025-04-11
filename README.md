@@ -46,10 +46,6 @@ The tests can be configured using environment config.
 
 ## 🧪 Running E2E Tests
 
-### Run all tests with Cucumber
-```bash
-npm 
-```
 
 ### Run Playwright e2e tests
 ```bash
@@ -70,9 +66,6 @@ npm run e2e:ui
 ```bash
 npm run e2e:debug
 ```
-## 📊 E2E Test Reports
-
-- Playwright HTML reports can be viewed using `npm run e2e:report`
 
 ## 🧪 Running API Tests
 
